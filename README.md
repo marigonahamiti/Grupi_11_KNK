@@ -1,7 +1,7 @@
 # Grupi_11_KNK
 Zhvillimi i Sistemit Interaktiv për menaxhimin e rezervimeve ne hotele.
-Ky është një projekt i studentë të Universitetit të Prishtinës, në kuadër të lëndës Komuni
-Ne kemi kombinuar kodin burimor dhe njohuritë  e zhvilluara nga lenda.
+Ky është një projekt i studentë të Universitetit të Prishtinës, në kuadër të lëndës Komunikimi Njeri-Kompjuter.
+Ne kemi kombinuar kodin burimor dhe njohuritë e zhvilluara nga lenda përkatëse.
 
 
 # Qellimi i projektit
