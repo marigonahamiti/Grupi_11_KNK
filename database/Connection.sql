@@ -4,7 +4,6 @@
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bills`
 --
 create database hotel_managment;
 use  hotel_managment;
@@ -17,7 +16,6 @@ create TABLE `bills` (
 );
 select * from bills;
 --
--- Dumping data for table `bills`
 --
 
 insert into `bills` (`billID`, `reservationID`, `billDate`, `billAmount`) values
@@ -25,7 +23,6 @@ insert into `bills` (`billID`, `reservationID`, `billDate`, `billAmount`) values
 -- --------------------------------------------------------
 
 --
--- Table structure for table `customers`
 --
 drop table customers;
 
@@ -38,7 +35,6 @@ create TABLE `customers` (
   `customerEmail` varchar(50) NOT NULL
 )
 --
--- Dumping data for table `customers`
 --
 
 insert into `customers` (`customerIDNumber`, `customerName`, `customerNationality`, `customerGender`, `customerPhoneNo`, `customerEmail`) values
@@ -61,7 +57,6 @@ create TABLE `reservations` (
 ) 
 
 --
--- Dumping data for table `reservations`
 --
 select * from reservations;
 insert into `reservations` (`reservationID`, `customerIDNumber`, `roomNumber`, `checkInDate`, `checkOutDate`, `status`) values
@@ -82,7 +77,6 @@ create TABLE `rooms` (
 ) 
 
 --
--- Dumping data for table `rooms`
 --
 
 insert into `rooms` (`roomNumber`, `roomType`, `price`, `status`) values
@@ -123,27 +117,18 @@ create TABLE `users` (
 drop table users;
 select * from users;
 --
--- Dumping data for table `users`
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `bills`
 --
 ALTER TABLE `bills`
   ADD PRIMARY KEY (`billID`),
   ADD UNIQUE KEY `fk_bills_res` (`reservationID`) USING BTREE;
 
---
--- Indexes for table `customers`
+-
 --
 ALTER TABLE `customers`
   ADD PRIMARY KEY (`customerIDNumber`);
 
---
--- Indexes for table `reservations`
+-
 --
 ALTER TABLE `reservations`
   ADD PRIMARY KEY (`reservationID`),
@@ -151,7 +136,7 @@ ALTER TABLE `reservations`
   ADD KEY `fk_rooms_res` (`roomNumber`);
 
 --
--- Indexes for table `rooms`
+
 --
 ALTER TABLE `rooms`
   ADD PRIMARY KEY (`roomNumber`);
