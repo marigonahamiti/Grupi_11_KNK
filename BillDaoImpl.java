@@ -1,5 +1,5 @@
 public class BillDaoImpl implements BillDao{
-List<Bill> rooms;
+List<Bill> bills;
 public BillDaoImpl (){
 bills=new ArrayList<Bill>();
 Bill bill1=new Bill("Filan",40);
