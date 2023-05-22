@@ -13,8 +13,8 @@ bills.add(bill4);
 }
 @Override
 public void deleteBill(Bill bill){
-bills.remove(bill.getcustomerName());
-System.out.println("Customer name: "+bill.getcustomerName()+",updated in the database");
+bills.remove(bill.getCustomerName());
+System.out.println("Customer name: "+bill.getCustomerName()+",updated in the database");
 }
 @Override
 public List<Bill>getAllBills(){
@@ -26,7 +26,7 @@ return Bill.get(customerName);
 }
 @Override
 public void updateBill(Bill bill){
-bills.get(bill.getcustomerName()).setamount(bill.getamount());
-System.out.println("Customer name: "+bill.getcustomerName()+",updated in the database");
+bills.get(bill.getCustomerName()).setAmount(bill.getAmount());
+System.out.println("Customer name: "+bill.getCustomerName()+",updated in the database");
 }
 }
