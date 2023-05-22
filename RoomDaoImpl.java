@@ -28,7 +28,7 @@ return Room.get(Number);
 }
 @Override
 public void updateRoom(Room room){
-rooms.get(room.getNumber()).setType(student.getType());
+rooms.get(room.getNumber()).setType(room.getType());
 System.out.println("Room: Number"+room.getNumber()+",updated in the database");
 }
 }
