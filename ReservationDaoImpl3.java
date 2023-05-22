@@ -13,8 +13,8 @@ reservations.add(reservation4);
 }
 @Override
 public void deleteReservation(Reservation reservation){
-reservation.remove(reservation.getroomNumber());
-System.out.println("Room number: "+reservation.getroomNumber()+",updated in the database");
+reservation.remove(reservation.getRoomNumber());
+System.out.println("Room number: "+reservation.getRoomNumber()+",updated in the database");
 }
 @Override
 public List<Reservation>getAllReservations(){
@@ -26,7 +26,7 @@ return Rerevation.get(roomNumber);
 }
 @Override
 public void updateReservation(Reservation reservation){
-reservations.get(reservation.getroomNumber()).setstatus(bill.getstatus());
-System.out.println("Room number: "+reservation.getroomNumber()+",updated in the database");
+reservations.get(reservation.getRoomNumber()).setStatus(bill.getstatus());
+System.out.println("Room number: "+reservation.getRoomNumber()+",updated in the database");
 }
 }
