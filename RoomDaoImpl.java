@@ -24,7 +24,7 @@ return rooms;
 }
 @Override
 public Room getRoom(int Number){
-return students.get(Number);
+return Room.get(Number);
 }
 @Override
 public void updateRoom(Room room){
