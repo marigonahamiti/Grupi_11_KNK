@@ -113,8 +113,14 @@ public class BillController implements Initializable {
         }
     }
 
-    public void handleSearchKey(KeyEvent event) {
-        if (event.getEventType() == KeyEvent.KEY_RELEASED) {
+//     public void handleSearchKey(KeyEvent event) {
+//         if (event.getEventType() == KeyEvent.KEY_RELEASED) {
+//             String s = search.getText();
+//             Search(bills, s);
+//         }
+//     }
+     public void handleSearchKey(KeyEvent event) {
+        if (event.getCode() == KeyCode.ENTER) {
             String s = search.getText();
             Search(bills, s);
         }
