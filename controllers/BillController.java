@@ -123,7 +123,7 @@ public class BillController implements Initializable {
     public void clickBill(MouseEvent event) throws IOException {
         if (event.getClickCount() == 2) {
             if (billTable.getSelectionModel().getSelectedItem() != null) {
-                String path = "C:\\Users\\Mr.Cuong\\IdeaProjects\\HotelManagement\\res\\";
+                String path = "C:\\Users\\IdeaProjects\\HotelManagement\\res\\";
                 Bill selectedBill = billTable.getSelectionModel().getSelectedItem();
                 File file = new File(path + "bill" + selectedBill.getBillID() + ".pdf");
                 if (file.toString().endsWith(".pdf"))
